@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://btjwixf1n36np"]
+
+[ext_resource type="Script" path="res://HUD.gd" id="1_btldj"]
+[ext_resource type="Texture2D" uid="uid://dk1ynvred4f3v" path="res://spritesheet/coins.png" id="2_nybwm"]
+[ext_resource type="FontFile" uid="uid://b4xqwcq1k4c1n" path="res://Pixelify_Sans/PixelifySans-VariableFont_wght.ttf" id="3_tc01q"]
+[ext_resource type="Texture2D" uid="uid://dm2m3sd2eq4qx" path="res://spritesheet/lifes.png" id="4_jvdnq"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_btldj")
+
+[node name="CoinIndicator" type="Sprite2D" parent="."]
+position = Vector2(971, 27)
+scale = Vector2(4.625, 4.625)
+texture = ExtResource("2_nybwm")
+
+[node name="CoinsLabel" type="Label" parent="."]
+offset_left = 1013.0
+offset_top = 3.0
+offset_right = 1132.0
+offset_bottom = 81.0
+theme_override_fonts/font = ExtResource("3_tc01q")
+text = "0
+"
+
+[node name="Lives" type="Sprite2D" parent="."]
+position = Vector2(105.25, 27)
+scale = Vector2(4.625, 4.625)
+texture = ExtResource("4_jvdnq")
+
+[node name="LivesLabel" type="Label" parent="."]
+offset_left = 200.0
+offset_top = 19.0
+offset_right = 319.0
+offset_bottom = 89.0
+theme_override_fonts/font = ExtResource("3_tc01q")
+text = "x 3"
+
+[node name="LevelLabel" type="Label" parent="."]
+offset_left = 519.0
+offset_top = 4.0
+offset_right = 593.0
+offset_bottom = 39.0
+theme_override_fonts/font = ExtResource("3_tc01q")
+text = "LEVEL 1"

@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3843vt5orkl0"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_nk78d"]
+[ext_resource type="Texture2D" uid="uid://db6md5qwi2835" path="res://spritesheet/title.png" id="2_80p06"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nk78d")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 0
+offset_right = 1161.0
+offset_bottom = 656.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 210.0
+offset_top = 36.0
+offset_right = 904.0
+offset_bottom = 586.0
+texture = ExtResource("2_80p06")

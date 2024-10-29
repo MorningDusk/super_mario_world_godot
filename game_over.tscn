@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://diqpbbtedg30k"]
+
+[ext_resource type="FontFile" uid="uid://b4xqwcq1k4c1n" path="res://Pixelify_Sans/PixelifySans-VariableFont_wght.ttf" id="1_jsxte"]
+[ext_resource type="Script" path="res://game_over.gd" id="1_yxjai"]
+
+[node name="GameOver" type="Node2D"]
+script = ExtResource("1_yxjai")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1159.0
+offset_bottom = 653.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 539.0
+offset_top = 301.0
+offset_right = 626.0
+offset_bottom = 324.0
+theme_override_colors/font_color = Color(1, 0.737255, 0, 1)
+theme_override_fonts/font = ExtResource("1_jsxte")
+text = "GAME OVER"
